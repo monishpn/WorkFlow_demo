@@ -13,3 +13,12 @@ jobs:
     steps:
       - name: fileCreate
         run: touch new.txt
+
+      - name: Add it
+        run: git add new.txt
+
+      - name: Commiting
+        run: git commit -m "Added from VM"
+
+      - name: Pushing to github
+        run: git push origin main
