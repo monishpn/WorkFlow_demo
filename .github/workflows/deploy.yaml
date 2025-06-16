@@ -3,7 +3,7 @@ name: This is a demo workflow
 on:
   push:
     branches:
-      - [main]
+      - main
 
 jobs:
   create:
