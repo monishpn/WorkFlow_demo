@@ -11,12 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checking out
+        uses: actions/checkout@v3
+
       - name: fileCreate
         run: touch new.txt
 
       - name: Add it
         run: git add .
-
       - name: Commiting
         run: git commit -m "Added from VM"
 
