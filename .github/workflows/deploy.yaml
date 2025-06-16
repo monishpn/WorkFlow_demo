@@ -17,4 +17,4 @@ jobs:
         run: touch new.txt
 
       - name: listing
-        uses: ls
+        run: ls
